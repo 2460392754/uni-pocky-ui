@@ -1,0 +1,37 @@
+.p-btn {
+    @extend .p-shadow-1;
+    @extend .p-border-radius;
+
+    padding: 14upx 28upx;
+    width: max-content;
+    height: inherit;
+    line-height: inherit;
+    font-size: initial;
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    min-width: 140upx;
+
+    &::after {
+        border: none;
+    }
+
+    &:active {
+        transform: translate(1upx, 1upx);
+    }
+
+    &.long {
+        // width: calc(100% - 30px);
+        width: 100%;
+        display: block;
+    }
+
+    &.disabled {
+        @extend .p-bg-default;
+
+        // background: #f8f8f9;
+        color: #aeb0b7;
+        cursor: not-allowed;
+    }
+}

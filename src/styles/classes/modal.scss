@@ -1,0 +1,65 @@
+.p-modal-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(55, 55, 55, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.5s;
+
+    &.show {
+        opacity: 1;
+        transform: scale(1);
+        // overflow-x: hidden;
+        // overflow-y: auto;
+        pointer-events: auto;
+    }
+}
+
+.p-modal-body {
+    @extend .p-card-lg;
+    @extend .p-bg-default;
+
+    padding: 32upx;
+    font-weight: inherit;
+    min-width: 540upx;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    > .header,
+    > .content,
+    > .footer {
+        text-align: center;
+    }
+
+    > .header {
+        font-weight: bold;
+    }
+
+    > .content {
+        margin: 40upx 0;
+    }
+
+    > .footer {
+        // .ok,
+        // .cancel {
+        //     margin: 0 10px;
+        // }
+
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+
+        .ok,
+        .cancel {
+            cursor: pointer;
+        }
+    }
+}

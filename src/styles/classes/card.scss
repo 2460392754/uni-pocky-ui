@@ -1,0 +1,17 @@
+.p-card-lg {
+    // @extend .p-bg-default;
+    @extend .p-shadow-1;
+    @include card-common-mixin(32upx, 10upx);
+
+    // margin: auto;
+}
+
+.p-card-base {
+    @extend .p-shadow-2;
+    @extend .p-bg-default;
+    @extend .p-border-radius;
+
+    text-align: center;
+    margin: 40upx 30upx;
+    padding: 40upx;
+}

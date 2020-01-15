@@ -1,0 +1,12 @@
+.p-label {
+    @extend .p-color-content;
+
+    display: inline-block;
+    height: 84upx;
+    line-height: 84upx;
+    float: left;
+    vertical-align: top;
+    width: 140upx;
+    text-align: center;
+    font-size: 32upx;
+}

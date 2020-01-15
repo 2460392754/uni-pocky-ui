@@ -1,0 +1,147 @@
+// ------------------
+// ------------------
+// color
+// ------------------
+// ------------------
+.p-color-green {
+    @include color-mixin($p-color-green);
+}
+
+.p-color-yellow {
+    @include color-mixin($p-color-yellow);
+}
+
+.p-color-red {
+    @include color-mixin($p-color-red);
+}
+
+.p-color-bull {
+    @include color-mixin($p-color-bull);
+}
+
+.p-color-white {
+    @include color-mixin($p-color-white);
+}
+
+.p-color-black {
+    @include color-mixin($p-color-black);
+}
+
+.p-color-default {
+    @include color-mixin($p-color-default);
+}
+
+.p-color-content {
+    @include color-mixin($p-color-content);
+}
+
+.p-color-primary {
+    @include color-mixin($p-color-primary);
+}
+
+// ------------------
+// ------------------
+// bg-color
+// ------------------
+// ------------------
+.p-bg-color-green {
+    @include bg-color-mixin($p-color-green);
+}
+
+.p-bg-color-yellow {
+    @include bg-color-mixin($p-color-yellow);
+}
+
+.p-bg-color-red {
+    @include bg-color-mixin($p-color-red);
+}
+
+.p-bg-color-bull {
+    @include bg-color-mixin($p-color-bull);
+}
+
+.p-bg-color-white {
+    @include bg-color-mixin($p-color-white);
+}
+
+.p-bg-color-black {
+    @include bg-color-mixin($p-color-black);
+}
+
+.p-bg-color-default {
+    @include bg-color-mixin($p-color-default);
+}
+
+.p-bg-color-content {
+    @include bg-color-mixin($p-color-content);
+}
+
+.p-bg-color-primary {
+    @include bg-color-mixin($p-color-primary);
+}
+
+// ------------------
+// ------------------
+// bg
+// ------------------
+// ------------------
+.p-bg-green {
+    @extend .p-color-white;
+    @extend .p-bg-color-green;
+}
+
+.p-bg-yellow {
+    @extend .p-color-white;
+    @extend .p-bg-color-yellow;
+}
+
+.p-bg-red {
+    @extend .p-color-white;
+    @extend .p-bg-color-red;
+}
+
+.p-bg-bull {
+    @extend .p-color-white;
+    @extend .p-bg-color-bull;
+}
+
+.p-bg-white {
+    @extend .p-color-black;
+    @extend .p-bg-color-white;
+}
+
+.p-bg-black {
+    @extend .p-color-white;
+    @extend .p-bg-color-black;
+}
+
+.p-bg-primary {
+    @extend .p-color-white;
+    @extend .p-bg-color-primary;
+}
+
+.p-bg-default {
+    @extend .p-color-content;
+    @extend .p-bg-color-default;
+}
+
+.p-bg-content {
+    @extend .p-color-white;
+    @extend .p-bg-color-content;
+}
+
+// ------------------
+// ------------------
+// shadow
+// ------------------
+// ------------------
+.p-shadow-1 {
+    box-shadow: $p-shadow-1;
+}
+.p-shadow-2 {
+    box-shadow: $p-shadow-2;
+}
+
+.p-border-radius {
+    border-radius: $p-border-radius;
+}

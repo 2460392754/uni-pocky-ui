@@ -1,0 +1,16 @@
+@mixin card-common-mixin($font-size, $border-radius) {
+    $padding-top: 14upx;
+    $padding-left: 40upx;
+    $letter-spacing: 4upx;
+
+    display: block;
+    width: max-content;
+    letter-spacing: $letter-spacing;
+    border-radius: $border-radius;
+    padding: $padding-top $padding-left - $letter-spacing $padding-top $padding-left;
+
+    font: {
+        size: $font-size;
+        weight: bold;
+    }
+}

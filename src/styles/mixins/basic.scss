@@ -1,0 +1,7 @@
+@mixin color-mixin($color) {
+    color: $color;
+}
+
+@mixin bg-color-mixin($color) {
+    background-color: $color;
+}

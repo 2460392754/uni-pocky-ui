@@ -1,0 +1,6 @@
+.p-textarea {
+    @extend .p-input;
+
+    width: inherit;
+    overflow: hidden;
+}

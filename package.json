@@ -1,0 +1,38 @@
+{
+    "name": "uni-pocky-ui",
+    "version": "1.0.19",
+    "description": "",
+    "main": "./src/index.js",
+    "scripts": {
+        "format": "prettier --write \"src/**/*\"",
+        "lint": "eslint --ext .ts,.vue,.js src",
+        "sass": "sass ./src/styles/index.scss ./dist/styles/index.css --style compressed --no-source-map",
+        "sass:watch": "sass ./src/styles/index.scss ./dist/styles/index.css --watch --style compressed --no-source-map",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+        "upx2px": "upx2px --watch --target=./dist/styles/index.css --output=./dist/styles/index.px.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/uni-app": "^1.4.1",
+        "@typescript-eslint/eslint-plugin": "^2.13.0",
+        "@typescript-eslint/parser": "^2.13.0",
+        "@vue/eslint-config-typescript": "^5.0.1",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.8.0",
+        "eslint-config-alloy": "^3.4.0",
+        "eslint-plugin-vue": "^6.1.1",
+        "prettier": "^1.19.1",
+        "sass": "^1.24.0",
+        "typescript": "^3.7.4",
+        "upx2px": "^1.0.2",
+        "vue-eslint-parser": "^5.0.0",
+        "vuepress": "^1.2.0"
+    },
+    "dependencies": {
+        "sass-loader": "^8.0.0",
+        "uni-pocky-core": "^1.0.2",
+        "vue-property-decorator": "^8.3.0"
+    }
+}
