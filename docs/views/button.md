@@ -1,10 +1,8 @@
 # Button 按钮
 
-## basic 基本
+<preview path="button"/>
 
-<div class="btn-container margin">
-    <p-button v-for="(value, key) of baseList" :type="value">{{key}}</p-button>
-</div>
+## 按钮类型
 
 ```html
 <p-button>Primary</p-button>
@@ -17,31 +15,25 @@
 <p-button type="p-bg-black">Black</p-button>
 ```
 
-## long 长按钮
-
-<div class="btn-container">
-    <p-button long>btn</p-button>
-</div>
+## 禁用类型
 
 ```html
-<p-button long>btn</p-button>
+<p-button disabled>禁用类型</p-button>
 ```
 
-## disabled 禁用
-
-<div class="btn-container">
-    <p-button disabled>btn</p-button>
-</div>
+## 类型尺寸
 
 ```html
-<p-button disabled>btn</p-button>
+<p-button long>长按钮</p-button>
 ```
 
-## form 表单
+## 表单
 
 ```html
-<p-button form-type="submit">提交</p-button> <br />
-<p-button form-type="reset">重置</p-button>
+<form>
+    <p-button form-type="submit">提交</p-button>
+    <p-button form-type="reset">重置</p-button>
+</form>
 ```
 
 ## 登录(开放能力)
@@ -61,6 +53,10 @@
 
 <!-- #ifdef MP-TOUTIAO -->
 <p-button @click="onLoginToutiao">头条小程序登录</p-button>
+<!-- #endif -->
+
+<!-- #ifdef MP-QQ -->
+<p-button type="p-bg-green" open-type="getUserInfo" @click="onLoginQQ">登录</p-button>
 <!-- #endif -->
 ```
 
@@ -88,23 +84,16 @@
 <script>
 export default {
     data() {
-        return {
-            baseList:{
-                Primary:'p-bg-primary',
-                Success:'p-bg-green',
-                Warn:'p-bg-yellow',
-                Error:'p-bg-red',
-                Default:'p-bg-default',
-                Content:'p-bg-content',
-                White:'p-bg-white',
-                Black:'p-bg-black',
-            }
-        }
+        return { }
     },
+
+    mounted(){
+        console.log(this)
+    }
 }
 </script>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 .btn-container{
     margin: 10px 0;
 
@@ -114,4 +103,4 @@ export default {
         }
     }
 }
-</style>
+</style> -->

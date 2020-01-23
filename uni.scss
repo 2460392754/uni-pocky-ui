@@ -1,0 +1,17 @@
+// @import './src/styles/index.scss';
+
+.page {
+    // @extend .p-color-content;
+    font-size: 32upx;
+    color: #515a6e;
+}
+
+.page-container {
+    margin: 40upx;
+}
+
+.title {
+    margin: 50upx 0 20upx;
+    display: block;
+    font-size: 28upx;
+}

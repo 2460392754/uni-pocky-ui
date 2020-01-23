@@ -1,7 +1,3 @@
-import '../../dist/styles/index.px.css';
-import Vue from 'vue';
-import UniPockyUi from '../../src/index';
-
-Vue.use(UniPockyUi);
+import Vue from "vue";
 
 export default ({ Vue }) => {};

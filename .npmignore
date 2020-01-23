@@ -1,0 +1,14 @@
+node_modules/
+src/
+test/
+preview/
+docs/
+
+uni.scss
+pages.json
+manifest.json
+main.js
+App.vue
+tsconfig.json
+.eslintrc.js
+.prettierrc.js

@@ -2,7 +2,7 @@
     <view :class="getClass" :style="[{ height: customBar + 'px' }]">
         <view class="body" :style="styles" :class="[bgColor]">
             <view class="back" @tap="backPage" v-if="isBack" :style="statusBarStyles">
-                <p-icon type="ios-arrow-back" />
+                <p-icon type="ios-arrow-back" size="40"/>
                 <view><slot name="back"/></view>
             </view>
 
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { setCustomBar } from 'uni-pocky-core';
+import { setCustomBar } from '@pocky/uni-core';
 import PIcon from './p-icon';
 
 export default {

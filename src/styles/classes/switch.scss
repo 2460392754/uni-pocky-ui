@@ -1,0 +1,57 @@
+.p-switch-wrapper {
+    display: inline-block;
+    position: relative;
+
+    .p-switch {
+        .uni-switch-input {
+            padding: 0 48upx;
+            width: 96upx;
+            height: 52upx;
+            border: none;
+
+            &::before,
+            &::after {
+                border-radius: inherit;
+                height: inherit;
+            }
+
+            &::before {
+                background: #515a6e !important;
+            }
+
+            &::after {
+                width: 52upx;
+            }
+
+            &.uni-switch-input-checked {
+                &::after {
+                    transform: translateX(46upx);
+                }
+            }
+        }
+
+        &.square {
+            .uni-switch-input {
+                border-radius: 10upx;
+
+                &::after {
+                }
+            }
+        }
+    }
+
+    .p-icon {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &.left {
+            left: 14upx;
+        }
+
+        &.right {
+            right: 24upx;
+        }
+    }
+}

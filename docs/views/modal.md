@@ -1,25 +1,20 @@
 # Modal 对话框
 
-## 基本
+<preview path="modal"/>
 
-<div class='modal-container'>
-    <button class="p-btn p-bg-primary" @click="modal1 = true">弹出基本 modal</button>
-</div>
-
-<div :class="['p-modal-mask', modal1 ? 'show' : '']">
-    <div class="p-modal-body">
-        <div class="header">is title basic</div>
-        <div class="content">is content basic</div>
-        <div class="footer">
-            <span class="ok p-color-primary" @click="modal1 = false">ok</span>
-            <span class="cancel p-color-red" @click="modal1 = false">cancel</span>
-        </div>
-    </div>
-</div>
+## 基础用法
 
 ```vue
 <template>
-    <p-modal v-model="value" title="is title" content="is content" ok="ok" cancel="cancel" @ok="onOk" @cancel="onCancel" />
+    <p-modal
+        v-model="value"
+        title="is title"
+        content="is content"
+        ok="ok"
+        cancel="cancel"
+        @ok="onOk"
+        @cancel="onCancel"
+    />
 </template>
 
 <script>
@@ -43,22 +38,7 @@ export default {
 </script>
 ```
 
-## slot 插槽
-
-<div class='modal-container'>
-    <button class="p-btn p-bg-primary" @click="modal2 = true">弹出插槽 modal</button>
-</div>
-
-<div :class="['p-modal-mask', modal2 ? 'show' : '']">
-    <div class="p-modal-body">
-        <div class="header">is title slot</div>
-        <div class="content">is content slot</div>
-        <div class="footer">
-            <button class="p-btn p-bg-primary" @click="modal2 = false">ok</button>
-            <button class="p-btn p-bg-red" @click="modal2 = false">cancel</button>
-        </div>
-    </div>
-</div>
+## 自定义插槽
 
 ```vue
 <template>
@@ -67,7 +47,7 @@ export default {
         <block slot="content">is content</block>
         <block slot="footer">
             <p-button @click="onOk">ok</p-button>
-            <p-button @click="onCancel">cancel</p-button>
+            <p-button type="p-bg-red" @click="onCancel">cancel</p-button>
         </block>
     </p-modal>
 </template>
@@ -144,8 +124,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<!-- <style lang="scss">
 .modal-container > .p-btn{
     margin-top: 15px;
 }
-</style>
+</style> -->

@@ -132,6 +132,47 @@
 
 // ------------------
 // ------------------
+// border-color
+// ------------------
+// ------------------
+.p-border-color-green {
+    @include border-color-mixin($p-color-green);
+}
+
+.p-border-color-yellow {
+    @include border-color-mixin($p-color-yellow);
+}
+
+.p-border-color-red {
+    @include border-color-mixin($p-color-red);
+}
+
+.p-border-color-bull {
+    @include border-color-mixin($p-color-bull);
+}
+
+.p-border-color-white {
+    @include border-color-mixin($p-color-white);
+}
+
+.p-border-color-black {
+    @include border-color-mixin($p-color-black);
+}
+
+.p-border-color-primary {
+    @include border-color-mixin($p-color-primary);
+}
+
+.p-border-color-default {
+    @include border-color-mixin($p-color-default);
+}
+
+.p-border-color-content {
+    @include border-color-mixin($p-color-content);
+}
+
+// ------------------
+// ------------------
 // shadow
 // ------------------
 // ------------------

@@ -8,6 +8,8 @@ import PIcon from './components/p-icon.vue';
 import PInput from './components/p-input.vue';
 import PLabel from './components/p-label.vue';
 import PTextarea from './components/p-textarea.vue';
+import PCheckbox from './components/p-checkbox.vue';
+import PSwitch from './components/p-switch.vue';
 
 const components = {
     PButton,
@@ -17,7 +19,9 @@ const components = {
     PIcon,
     PInput,
     PLabel,
-    PTextarea
+    PTextarea,
+    PCheckbox,
+    PSwitch
 };
 
 const install = function(Vue) {

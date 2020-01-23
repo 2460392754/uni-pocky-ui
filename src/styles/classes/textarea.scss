@@ -1,6 +1,10 @@
-.p-textarea {
-    @extend .p-input;
+.p-textarea-wrapper {
+    @extend .p-input-wrapper;
 
-    width: inherit;
-    overflow: hidden;
+    .p-textarea {
+        @extend .p-input;
+
+        // width: inherit;
+        overflow: hidden;
+    }
 }

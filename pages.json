@@ -1,0 +1,17 @@
+{
+    "pages": [
+        { "path": "preview/index" },
+        { "path": "preview/button" },
+        { "path": "preview/icon" },
+        { "path": "preview/nav" },
+        { "path": "preview/card" },
+        { "path": "preview/input" },
+        { "path": "preview/textarea" },
+        { "path": "preview/modal" },
+        { "path": "preview/checkbox" },
+        { "path": "preview/switch" }
+    ],
+    "globalStyle": {
+        "navigationStyle": "custom"
+    }
+}

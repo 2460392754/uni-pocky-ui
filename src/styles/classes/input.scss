@@ -1,13 +1,30 @@
-.p-input {
-    @extend .p-color-content;
-
+.p-input-wrapper {
     position: relative;
-    border: none;
-    border-bottom: 4upx solid $p-color-primary;
+    height: inherit;
+    border-style: solid;
+    border-width: 0 0 4upx 0;
     padding: 18upx;
     margin: 20upx;
-    outline: none;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+
+    > .left {
+        margin-right: 20upx;
+    }
+
+    > .right {
+        margin-left: 20upx;
+    }
+}
+
+.p-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: inherit;
+    font-size: inherit;
 
     &:before {
         content: '';

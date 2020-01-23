@@ -1,39 +1,9 @@
-// module.exports = {
-//     title: 'uni-pocky-ui',
-//     description: '一个简单的uni的ui框架',
-//     // base: '/docs',
-//     head: [['link', { rel: 'icon', href: '/logo.png' }]],
-//     themeConfig: {
-//         nav: [{ text: 'github', link: 'https://google.com', target: '_self', rel: '' }],
-//         // sidebar: [
-//         //     {
-//         //         title: '组件',
-//         //         // path: '/components/', // 可选的, 应该是一个绝对路径
-//         //         collapsable: false, // 可选的, 默认值是 true,
-//         //         // sidebarDepth: 1, // 可选的, 默认值是 1
-//         //         children: [
-//         //             {
-//         //                 title: 'color 颜色',
-//         //                 path: 'color'
-//         //             }
-//         //         ]
-//         //     }
-//         // ]
-//         sidebar: {
-//             '/c/': ['color', 'btn']
-//         },
-
-//         // 页面缓存
-//         serviceWorker: {
-//             updatePopup: true
-//         }
-//     }
-// };
-
 module.exports = {
     title: "uni-pocky-ui",
     description: "一个简单的uni的ui框架",
     logo: "/logo.png",
+    dest: "./dist-docs",
+    base: "/docs/",
     head: [
         [
             "link",
@@ -90,7 +60,22 @@ module.exports = {
 
         // 侧边栏
         sidebar: {
-            "/components/": ["introduce", "install", "use", "logs", "theme", "color", "icon", "button", "nav", "card", "input", "textarea", "modal"]
+            "/views/": [
+                "introduce",
+                "install",
+                "use",
+                "logs",
+                "theme",
+                "color",
+                "icon",
+                "button",
+                "nav",
+                "card",
+                "input",
+                "textarea",
+                "modal",
+                "switch"
+            ]
         },
 
         // sidebarDepth: 2,

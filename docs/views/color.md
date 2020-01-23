@@ -37,7 +37,7 @@ export default {
     },
 }
 </script>
-
+<!--
 <style lang="scss" scoped>
 .card{
     display: flex;
@@ -56,4 +56,4 @@ export default {
         color:#000;
     }
 }
-</style>
+</style> -->
