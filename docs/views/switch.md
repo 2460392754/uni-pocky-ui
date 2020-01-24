@@ -63,7 +63,7 @@
 
 ## API
 
-### p-switch props
+### props
 
 | 属性     |        说明        |    类型 |  默认值 |
 | -------- | :----------------: | ------: | ------: |
@@ -74,8 +74,14 @@
 | disabled |      是否禁用      | Boolean | `false` |
 | square   |  组件形状为正方形  | Boolean | `false` |
 
-### p-switch event
+### event
 
 | 事件名 |   说明   |  返回值 |
 | ------ | :------: | ------: |
 | change | 内容输入 | \$event |
+
+### slot
+
+| 名称    | 说明 |
+| ------- | :--: |
+| default |      |

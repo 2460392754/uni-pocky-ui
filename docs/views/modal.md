@@ -77,13 +77,13 @@ export default {
 
 ## API
 
-### p-modal props
+### props
 
 | 属性    |   说明   |  类型 | 默认值 |
 | ------- | :------: | ----: | -----: |
 | p-class | 样式穿透 | Array |      - |
 
-### p-modal event
+### event
 
 | 事件名 |          说明          |  返回值 |
 | ------ | :--------------------: | ------: |
@@ -91,7 +91,7 @@ export default {
 | cancel |     点击取消的回调     | \$event |
 | change | 显示状态发生变化时触发 | Boolean |
 
-### p-modal slot
+### slot
 
 | 名称    |      说明      |
 | ------- | :------------: |
@@ -123,9 +123,3 @@ export default {
     }
 };
 </script>
-
-<!-- <style lang="scss">
-.modal-container > .p-btn{
-    margin-top: 15px;
-}
-</style> -->
