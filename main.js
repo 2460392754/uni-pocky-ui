@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import App from './App';
-// import UniPockyUi from './src';
-import './src/styles/index.scss';
-
-// Vue.use(UniPockyUi);
+import './dist/styles/index.css';
 
 import PButton from './src/components/p-button.vue';
 import PCard from './src/components/p-card.vue';

@@ -3,7 +3,6 @@
     @extend .p-border-radius;
 
     padding: 14rpx 28rpx;
-    // width: max-content;
     height: inherit;
     line-height: inherit;
     font-size: initial;
@@ -11,6 +10,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    width: max-content;
     min-width: 140rpx;
 
     &::after {
