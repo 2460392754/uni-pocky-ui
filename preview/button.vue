@@ -1,9 +1,12 @@
 <template>
     <view class="page button-page">
-        <p-nav bg-color="p-bg-green" is-back>
-            <block slot="back">返回</block>
-            <block slot="content">button</block>
-        </p-nav>
+        <p-nav
+            bg-color="p-bg-green"
+            content="button"
+            left-text="返回"
+            left-icon="ios-arrow-back"
+            click-left-back-page
+        />
 
         <view class="page-container">
             <text class="title">按钮类型</text>

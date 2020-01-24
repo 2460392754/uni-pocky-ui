@@ -1,9 +1,12 @@
 <template>
     <view class="page card-page">
-        <p-nav bg-color="p-bg-green" is-back>
-            <block slot="back">返回</block>
-            <block slot="content">card</block>
-        </p-nav>
+        <p-nav
+            bg-color="p-bg-green"
+            content="card"
+            left-text="返回"
+            left-icon="ios-arrow-back"
+            click-left-back-page
+        />
 
         <view class="page-container">
             <text class="title">基础用法</text>

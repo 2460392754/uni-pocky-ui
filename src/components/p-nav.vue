@@ -1,17 +1,21 @@
 <template>
     <view :class="getClass" :style="[{ height: customBar + 'px' }]">
         <view class="body" :style="styles" :class="[bgColor]">
-            <view class="back" @tap="backPage" v-if="isBack" :style="statusBarStyles">
-                <p-icon type="ios-arrow-back" size="40"/>
-                <view><slot name="back"/></view>
+            <view class="left" @tap="onClickLeft" :style="statusBarStyles">
+                <p-icon v-if="leftIcon" :type="leftIcon" size="40" />
+                <block>{{ leftText }}</block>
+                <slot name="left" />
             </view>
 
             <view class="content" :style="statusBarStyles">
+                <block>{{ content }}</block>
                 <slot name="content" />
             </view>
 
-            <view class="right">
+            <view class="right" @tap="onClickRight">
+                <block>{{ rightText }}</block>
                 <slot name="right" />
+                <p-icon v-if="rightIcon" :type="rightIcon" size="40" />
             </view>
         </view>
     </view>
@@ -23,10 +27,26 @@ import PIcon from './p-icon';
 
 export default {
     props: {
-        isBack: {
-            type: Boolean,
-            default: false
-        },
+        // 左侧图标
+        leftIcon: String,
+
+        // 左侧文案
+        leftText: String,
+
+        // 点击左侧文案返回页面
+        clickLeftBackPage: Boolean,
+
+        // 标题
+        content: String,
+
+        // 右侧文案
+        rightText: String,
+
+        // 右侧图标
+        rightIcon: String,
+
+        // 是否固定在顶部
+        fixed: Boolean,
 
         // 背景颜色
         bgColor: {
@@ -77,10 +97,23 @@ export default {
         },
 
         // 返回页面
-        backPage() {
+        $_backPage() {
             uni.navigateBack({
                 delta: 1
             });
+        },
+
+        onClickLeft(e) {
+            if (this.clickLeftBackPage) {
+                this.$_backPage();
+                return;
+            }
+
+            this.$emit('left', e);
+        },
+
+        onClickRight(e) {
+            this.$emit('right', e);
         }
     },
 

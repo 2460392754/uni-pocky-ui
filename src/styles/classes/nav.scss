@@ -10,25 +10,34 @@
         width: 100%;
     }
 
+    .left,
+    .right {
+        display: flex;
+    }
+
+    .left {
+        @include nav-black-common(60upx);
+
+        right: auto;
+        left: 30upx;
+
+        .p-icon {
+            margin-right: 20upx;
+        }
+    }
+
     .content {
         @include nav-black-common(60upx);
     }
 
-    .back {
-        @include nav-black-common(60upx);
-
-        display: flex;
-        right: auto;
-        left: 30upx;
-        cursor: pointer;
-
-        .ion-ios-arrow-back {
-            font-size: inherit;
-            margin-right: 10px;
-        }
-    }
-
     .right {
         @include nav-black-common(60upx);
+
+        left: auto;
+        right: 30upx;
+
+        .p-icon {
+            margin-left: 20upx;
+        }
     }
 }

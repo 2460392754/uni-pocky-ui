@@ -1,8 +1,6 @@
 <template>
     <view class="page index-page">
-        <p-nav bg-color="p-bg-green">
-            <block slot="content">index</block>
-        </p-nav>
+        <p-nav bg-color="p-bg-green" content="index" />
 
         <view class="page-container">
             <view>
@@ -44,8 +42,8 @@ export default {
                         input: 'Input 输入框',
                         textarea: 'Textarea 多行输入框',
                         label: 'Label 标签',
-                        checkbox:"Checbox 多选框",
-                        switch:"Switch 开关选项",
+                        checkbox: 'Checbox 多选框',
+                        switch: 'Switch 开关选项'
                     }
                 },
                 {
