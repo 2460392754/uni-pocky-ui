@@ -49,9 +49,11 @@
     </view>
 </template>
 
-<style scoped>
-.container-1 {
-    display: flex;
-    justify-content: space-between;
+<style lang="scss">
+.card-page {
+    .container-1 {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 </style>

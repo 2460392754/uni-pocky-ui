@@ -26,3 +26,8 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.checkbox-page {
+}
+</style>

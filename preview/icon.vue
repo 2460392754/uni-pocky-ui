@@ -18,7 +18,7 @@
                 <p-icon type="ios-add-circle" />
                 <p-icon type="ios-add-circle-outline" />
             </view>
-
+            
             <text class="title">图标颜色</text>
             <view class="container-2">
                 <p-icon type="md-add" color="#2d8cf0" />
@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .page-container .p-icon {
     margin: 0 15px;
 }

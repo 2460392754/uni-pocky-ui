@@ -52,3 +52,8 @@
         </view>
     </view>
 </template>
+
+<style lang="scss">
+.input-page {
+}
+</style>
