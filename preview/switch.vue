@@ -81,3 +81,9 @@ export default {
     }
 };
 </script>
+
+<style lang="scss" scoped>
+/deep/ .p-switch-wrapper {
+    margin-right: 30rpx;
+}
+</style>

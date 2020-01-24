@@ -3,11 +3,15 @@
     position: relative;
 
     .p-switch {
-        .uni-switch-input {
+        .uni-switch-input,
+        .wx-switch-input,
+        .my-switch-input,
+        .qq-switch-input {
             padding: 0 48upx;
             width: 96upx;
             height: 52upx;
             border: none;
+            margin: 0;
 
             &::before,
             &::after {
@@ -20,10 +24,17 @@
             }
 
             &::after {
+                /* #ifdef MP-QQ */
+                margin: -13px -5px;
+                /*  #endif */
+
                 width: 52upx;
             }
 
-            &.uni-switch-input-checked {
+            &.uni-switch-input-checked,
+            &.my-switch-input-checked,
+            &.wx-switch-input-checked,
+            &.qq-switch-input-checked {
                 &::after {
                     transform: translateX(46upx);
                 }
@@ -31,27 +42,31 @@
         }
 
         &.square {
-            .uni-switch-input {
+            .uni-switch-input,
+            .my-switch-input,
+            .wx-switch-input,
+            .qq-switch-input {
                 border-radius: 10upx;
-
-                &::after {
-                }
             }
         }
     }
 
     .p-icon {
         position: absolute;
-        z-index: 2;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
 
         &.left {
-            left: 14upx;
+            left: 0;
         }
 
         &.right {
-            right: 24upx;
+            right: 0;
         }
     }
 }
