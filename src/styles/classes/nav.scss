@@ -1,43 +1,48 @@
-.p-nav {
-    font-size: $p-font-size-base;
+.p-nav-wrapper {
     position: relative;
 
-    .p-nav-body {
+    .p-nav {
+        font-size: $p-font-size-base;
+        // z-index: 9;
+        height: inherit;
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 9;
         width: 100%;
-    }
 
-    .left,
-    .right {
-        display: flex;
-    }
+        .p-nav-body {
+            height: inherit;
 
-    .left {
-        @include nav-black-common(60upx);
+            .left,
+            .right {
+                display: flex;
+            }
 
-        right: auto;
-        left: 30upx;
+            .left {
+                @include nav-black-common(60upx);
 
-        .p-icon {
-            margin-right: 20upx;
-        }
-    }
+                right: auto;
+                left: 30upx;
 
-    .content {
-        @include nav-black-common(60upx);
-    }
+                .p-icon {
+                    margin-right: 20upx;
+                }
+            }
 
-    .right {
-        @include nav-black-common(60upx);
+            .content {
+                @include nav-black-common(60upx);
+            }
 
-        left: auto;
-        right: 30upx;
+            .right {
+                @include nav-black-common(60upx);
 
-        .p-icon {
-            margin-left: 20upx;
+                left: auto;
+                right: 30upx;
+
+                .p-icon {
+                    margin-left: 20upx;
+                }
+            }
         }
     }
 }

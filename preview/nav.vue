@@ -63,3 +63,15 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+.nav-page .page-container {
+    /deep/ .container-1 .p-nav {
+        pointer-events: none;
+    }
+
+    /deep/ .p-nav {
+        position: relative;
+    }
+}
+</style>

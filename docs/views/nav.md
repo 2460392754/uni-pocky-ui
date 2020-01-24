@@ -42,16 +42,17 @@
 
 ### props
 
-| 属性                 |         说明         |    类型 |         默认值 |
-| -------------------- | :------------------: | ------: | -------------: |
-| p-class              |       样式穿透       |   Array |              - |
-| bg-color             |       背景类型       |  String | `p-bg-primary` |
-| left-icon            |       左侧图标       |  String |              - |
-| left-text            |       左侧文案       |  String |              - |
-| content              |         标题         |  String |              - |
-| right-icon           |       右侧图标       |  String |              - |
-| right-text           |       右侧文案       |  String |              - |
-| click-left-back-page | 点击左侧文案返回页面 | Boolean |          false |
+| 属性                 |         说明         |             类型 |         默认值 |
+| -------------------- | :------------------: | ---------------: | -------------: |
+| p-class              |       样式穿透       |            Array |              - |
+| z-index              |       定位层级       | Number \| String |              9 |
+| bg-color             |       背景类型       |           String | `p-bg-primary` |
+| left-icon            |       左侧图标       |           String |              - |
+| left-text            |       左侧文案       |           String |              - |
+| content              |         标题         |           String |              - |
+| right-icon           |       右侧图标       |           String |              - |
+| right-text           |       右侧文案       |           String |              - |
+| click-left-back-page | 点击左侧文案返回页面 |          Boolean |          false |
 
 ### event
 

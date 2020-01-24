@@ -1,21 +1,23 @@
 <template>
-    <view :class="getClass" :style="[{ height: customBar + 'px' }]">
-        <view class="body" :style="styles" :class="[bgColor]">
-            <view class="left" @tap="onClickLeft" :style="statusBarStyles">
-                <p-icon v-if="leftIcon" :type="leftIcon" size="40" />
-                <block>{{ leftText }}</block>
-                <slot name="left" />
-            </view>
+    <view :class="getClass" :style="getStyles">
+        <view :class="getBodyClass">
+            <view class="p-nav-body" :style="getStatusBarStyles">
+                <view class="left" @tap="onClickLeft">
+                    <p-icon v-if="leftIcon" :type="leftIcon" size="40" />
+                    <block>{{ leftText }}</block>
+                    <slot name="left" />
+                </view>
 
-            <view class="content" :style="statusBarStyles">
-                <block>{{ content }}</block>
-                <slot name="content" />
-            </view>
+                <view class="content">
+                    <block>{{ content }}</block>
+                    <slot name="content" />
+                </view>
 
-            <view class="right" @tap="onClickRight">
-                <block>{{ rightText }}</block>
-                <slot name="right" />
-                <p-icon v-if="rightIcon" :type="rightIcon" size="40" />
+                <view class="right" @tap="onClickRight">
+                    <block>{{ rightText }}</block>
+                    <slot name="right" />
+                    <p-icon v-if="rightIcon" :type="rightIcon" size="40" />
+                </view>
             </view>
         </view>
     </view>
@@ -48,6 +50,12 @@ export default {
         // 是否固定在顶部
         fixed: Boolean,
 
+        // 定位 层级
+        zIndex: {
+            type: [Number, String],
+            default: 9
+        },
+
         // 背景颜色
         bgColor: {
             type: String,
@@ -74,15 +82,23 @@ export default {
 
     computed: {
         getClass() {
-            return ['p-nav', ...this.pClass].join(' ');
+            return ['p-nav-wrapper', ...this.pClass].join(' ');
+        },
+
+        getBodyClass() {
+            return ['p-nav', this.bgColor].join(' ');
         },
 
         // css样式
-        styles() {
-            return `height:${this.customBar}px;`;
+        getStyles() {
+            return `height: ${this.customBar}px; z-index: ${this.zIndex}`;
+            // return {
+            //     height: `${this.customBar}px`,
+            //     zIndex: this.zIndex
+            // };
         },
 
-        statusBarStyles() {
+        getStatusBarStyles() {
             return `transform: translateY(${this.statusBar / 2}px)`;
         }
     },
