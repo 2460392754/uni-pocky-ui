@@ -19,28 +19,28 @@
             }
 
             .left {
-                @include nav-black-common(60upx);
+                @include nav-black-common(60rpx);
 
                 right: auto;
-                left: 30upx;
+                left: 30rpx;
 
                 .p-icon {
-                    margin-right: 20upx;
+                    margin-right: 20rpx;
                 }
             }
 
             .content {
-                @include nav-black-common(60upx);
+                @include nav-black-common(60rpx);
             }
 
             .right {
-                @include nav-black-common(60upx);
+                @include nav-black-common(60rpx);
 
                 left: auto;
-                right: 30upx;
+                right: 30rpx;
 
                 .p-icon {
-                    margin-left: 20upx;
+                    margin-left: 20rpx;
                 }
             }
         }

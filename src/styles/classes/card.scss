@@ -1,7 +1,7 @@
 .p-card-lg {
     // @extend .p-bg-default;
     @extend .p-shadow-1;
-    @include card-common-mixin(32upx, 10upx);
+    @include card-common-mixin(32rpx, 10rpx);
 
     // margin: auto;
 }
@@ -11,6 +11,6 @@
     @extend .p-border-radius;
 
     text-align: center;
-    margin: 40upx 30upx;
-    padding: 40upx;
+    margin: 40rpx 30rpx;
+    padding: 40rpx;
 }

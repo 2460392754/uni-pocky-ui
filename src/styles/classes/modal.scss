@@ -23,9 +23,9 @@
     @extend .p-card-lg;
     @extend .p-bg-default;
 
-    padding: 32upx;
+    padding: 32rpx;
     font-weight: inherit;
-    min-width: 540upx;
+    min-width: 540rpx;
 
     position: absolute;
     left: 50%;
@@ -43,7 +43,7 @@
     }
 
     > .content {
-        margin: 40upx 0;
+        margin: 40rpx 0;
     }
 
     > .footer {

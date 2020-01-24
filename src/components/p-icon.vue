@@ -1,5 +1,5 @@
 <template>
-    <text :class="getClass" @tap="tap" :style="{ color, fontSize: size + 'upx' }"></text>
+    <text :class="getClass" @tap="tap" :style="{ color, fontSize: size + 'rpx' }"></text>
 </template>
 
 <script>

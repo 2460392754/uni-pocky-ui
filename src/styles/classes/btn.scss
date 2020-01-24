@@ -2,8 +2,8 @@
     @extend .p-shadow-1;
     @extend .p-border-radius;
 
-    padding: 14upx 28upx;
-    width: max-content;
+    padding: 14rpx 28rpx;
+    // width: max-content;
     height: inherit;
     line-height: inherit;
     font-size: initial;
@@ -11,18 +11,17 @@
     outline: none;
     border: none;
     cursor: pointer;
-    min-width: 140upx;
+    min-width: 140rpx;
 
     &::after {
         border: none;
     }
 
     &:active {
-        transform: translate(1upx, 1upx);
+        transform: translate(1rpx, 1rpx);
     }
 
     &.long {
-        // width: calc(100% - 30px);
         width: 100%;
         display: block;
     }
@@ -30,7 +29,6 @@
     &.disabled {
         @extend .p-bg-default;
 
-        // background: #f8f8f9;
         color: #aeb0b7;
         cursor: not-allowed;
     }
