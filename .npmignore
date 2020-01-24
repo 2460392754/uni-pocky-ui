@@ -1,8 +1,11 @@
 node_modules/
-src/
 test/
 preview/
 docs/
+dist-docs/
+unpackage/
+bash/
+src/styles/common/ionicons/fonts
 
 uni.scss
 pages.json
