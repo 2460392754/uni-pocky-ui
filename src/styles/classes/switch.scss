@@ -24,9 +24,9 @@
             }
 
             &::after {
-                /* #ifdef MP-QQ */
+                /*!/* #ifdef MP-QQ *\/ */
                 margin: -13px -5px;
-                /*  #endif */
+                /*!/*  #endif *\/ */
 
                 width: 52rpx;
             }
