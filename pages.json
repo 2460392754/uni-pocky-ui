@@ -12,6 +12,7 @@
         { "path": "preview/switch" }
     ],
     "globalStyle": {
-        "navigationStyle": "custom"
+        "navigationStyle": "custom",
+        "transparentTitle": "always"
     }
 }
