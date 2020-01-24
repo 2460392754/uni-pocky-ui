@@ -1,9 +1,11 @@
 <template>
     <button
+        hover-class="none"
         :class="getClass"
         :openType="openType"
         :formType="formType"
         :scope="scope"
+        :password="type === 'password'"
         @tap="tap"
         @getuserinfo="getuserinfo"
     >
@@ -30,7 +32,7 @@ export default {
 
         // 是否禁用
         disabled: Boolean,
-        
+
         // form
         formType: String,
 
