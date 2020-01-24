@@ -1,6 +1,6 @@
 {
     "name": "@pocky/uni-ui",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "uniapp的ui框架",
     "main": "./src/index.js",
     "scripts": {
