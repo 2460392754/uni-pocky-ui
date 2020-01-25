@@ -23,14 +23,20 @@
     @extend .p-card-lg;
     @extend .p-bg-default;
 
-    padding: 32rpx;
     font-weight: inherit;
     min-width: 540rpx;
+    padding: 0;
 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    > .header,
+    > .content {
+        margin: 40rpx 0;
+        padding: 0 32rpx;
+    }
 
     > .header,
     > .content,
@@ -42,23 +48,18 @@
         font-weight: bold;
     }
 
-    > .content {
-        margin: 40rpx 0;
-    }
-
     > .footer {
-        // .ok,
-        // .cancel {
-        //     margin: 0 10px;
-        // }
-
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        margin: auto;
+        margin-bottom: 20rpx;
 
         .ok,
         .cancel {
+            height: 80rpx;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
         }
     }
