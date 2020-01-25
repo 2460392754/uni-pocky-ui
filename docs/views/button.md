@@ -48,7 +48,9 @@
 <!-- #endif -->
 
 <!-- #ifdef MP-ALIPAY -->
-<p-button scope="userInfo" open-type="getUserInfo" @click="onLoginAlipay">支付宝小程序登录</p-button>
+<p-button scope="userInfo" open-type="getUserInfo" @click="onLoginAlipay"
+    >支付宝小程序登录</p-button
+>
 <!-- #endif -->
 
 <!-- #ifdef MP-TOUTIAO -->
@@ -56,7 +58,7 @@
 <!-- #endif -->
 
 <!-- #ifdef MP-QQ -->
-<p-button type="p-bg-green" open-type="getUserInfo" @click="onLoginQQ">登录</p-button>
+<p-button open-type="getUserInfo" @click="onLoginQQ">登录</p-button>
 <!-- #endif -->
 ```
 
