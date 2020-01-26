@@ -17,11 +17,11 @@ jobs:
               with:
                   node-version: '10.x'
 
-            - name: Install npm dependencies 设置npm源并安装模块
-              run: npm ci
+            - name: Install npm dependencies 安装模块
+              run: yarn install
 
             - name: Run build task 文档项目打包
-              run: npm run docs:build
+              run: yarn docs:build
 
             - name: Deploy to Server 文档项目 部署到服务器
               uses: easingthemes/ssh-deploy@v2.0.7
