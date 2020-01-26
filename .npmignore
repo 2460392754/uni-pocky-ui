@@ -4,7 +4,6 @@ preview/
 docs/
 dist-docs/
 unpackage/
-bash/
 src/styles/common/ionicons/fonts
 
 uni.scss
