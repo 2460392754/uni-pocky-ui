@@ -694,14 +694,6 @@
   resolved "http://npm.pocky.top/@pocky%2funi-core/-/uni-core-1.0.0.tgz#126ec33dc046c07c5dd844789a685b191d5ef2af"
   integrity sha512-fXMBnT05cTtNVHVeMVc3AN+StsqPBhbzMCLxdLlc8h8YHsUUDGd8PELpghs+Jr8Gy3vqpR4DPRkgEqZUFWau5A==
 
-"@pocky/uni-upx2px@^1.0.0":
-  version "1.0.0"
-  resolved "http://npm.pocky.top/@pocky%2funi-upx2px/-/uni-upx2px-1.0.0.tgz#bc864f18ef7b06b140a3f136392db6411aa21009"
-  integrity sha512-7l30OpwvdFNpUkWLkHZQJX90HdjwseO/GNjHi7mGVlk+x/GbpVgQg1JTOlVLsli+lwyRoM+z/47/gRxP4pJ5uA==
-  dependencies:
-    commander "^4.0.1"
-    node-watch "^0.6.3"
-
 "@types/events@*":
   version "3.0.0"
   resolved "http://npm.pocky.top/@types%2fevents/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -2033,11 +2025,6 @@ commander@^2.20.0:
   version "2.20.3"
   resolved "http://npm.pocky.top/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
-
-commander@^4.0.1:
-  version "4.1.0"
-  resolved "http://npm.pocky.top/commander/-/commander-4.1.0.tgz#545983a0603fe425bc672d66c9e3c89c42121a83"
-  integrity sha1-VFmDoGA/5CW8Zy1myePInEISGoM=
 
 commander@~2.19.0:
   version "2.19.0"
@@ -4981,11 +4968,6 @@ node-releases@^1.1.46:
   integrity sha1-xZ73OaH9fsvZ8LfPW3hx6Ki1keQ=
   dependencies:
     semver "^6.3.0"
-
-node-watch@^0.6.3:
-  version "0.6.3"
-  resolved "http://npm.pocky.top/node-watch/-/node-watch-0.6.3.tgz#9abf739ae0638435be6c0d1c99d4dc2e53df7317"
-  integrity sha1-mr9zmuBjhDW+bA0cmdTcLlPfcxc=
 
 nopt@1.0.10:
   version "1.0.10"
