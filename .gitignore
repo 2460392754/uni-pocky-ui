@@ -1,4 +1,3 @@
 /node_modules
 /docs/.vuepress/dist
-/unpackage
-/dist-docs
+/unpackage/dist/dev
