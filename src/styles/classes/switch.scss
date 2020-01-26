@@ -6,6 +6,7 @@
         .uni-switch-input,
         .wx-switch-input,
         .my-switch-input,
+        .tt-switch-input,
         .qq-switch-input {
             padding: 0 48rpx;
             width: 96rpx;
@@ -34,6 +35,7 @@
             &.uni-switch-input-checked,
             &.my-switch-input-checked,
             &.wx-switch-input-checked,
+            &.tt-switch-input-checked,
             &.qq-switch-input-checked {
                 &::after {
                     transform: translateX(46rpx);
@@ -45,6 +47,7 @@
             .uni-switch-input,
             .my-switch-input,
             .wx-switch-input,
+            .tt-switch-input,
             .qq-switch-input {
                 border-radius: 10rpx;
             }
@@ -69,4 +72,13 @@
             right: 0;
         }
     }
+}
+
+:host .tt-switch-input,
+.tt-switch-input {
+    padding: 0 48rpx;
+    width: 96rpx;
+    height: 52rpx;
+    border: none;
+    margin: 0;
 }
