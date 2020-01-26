@@ -2,7 +2,7 @@ module.exports = {
     title: "uni-pocky-ui",
     description: "一个简单的uni的ui框架",
     logo: "/logo.png",
-    base: "/docs/",
+    base: "/uni-pocky-ui/docs/",
     head: [
         [
             "link",
