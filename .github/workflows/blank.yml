@@ -31,7 +31,7 @@ jobs:
                   SOURCE: 'docs/.vuepress/dist'
                   REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
                   REMOTE_USER: ${{ secrets.REMOTE_USER }}
-                  TARGET: ${{ secrets.REMOTE_TARGET }}
+                  TARGET: ${{ secrets.REMOTE_TARGET_DOCS }}
 
             - name: Deploy to Server h5网页预览项目 部署到服务器
               uses: easingthemes/ssh-deploy@v2.0.7
@@ -41,4 +41,4 @@ jobs:
                   SOURCE: 'unpackage/dist/build/h5/'
                   REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
                   REMOTE_USER: ${{ secrets.REMOTE_USER }}
-                  TARGET: ${{ secrets.REMOTE_TARGET }}
+                  TARGET: ${{ secrets.REMOTE_TARGET_PREVIEW }}
