@@ -79,7 +79,8 @@
             }
         },
         "router": {
-            "base": "/"
-        }
+            "base": "/uni-pocky-ui/preview/"
+        },
+        "title": "uni-pocky-ui"
     }
 }
