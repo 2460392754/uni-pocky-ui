@@ -18,7 +18,7 @@ jobs:
                   node-version: '10.x'
 
             - name: Install npm dependencies 设置npm源并安装模块
-              run: npm install --registry http://npm.pocky.top
+              run: npm install
 
             - name: Run build task 文档项目打包
               run: npm run docs:build
