@@ -18,7 +18,9 @@ jobs:
                   node-version: '10.x'
 
             - name: Install npm dependencies 安装模块
-              run: yarn install
+              run: |
+                  npm install -g yarn
+                  yarn
 
             - name: Run build task 文档项目打包
               run: yarn docs:build
