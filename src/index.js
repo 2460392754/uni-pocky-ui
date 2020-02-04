@@ -34,9 +34,9 @@ const install = function(Vue) {
 
 // // uniapp 目前支持者静态注册 https://ask.dcloud.net.cn/question/71556
 
-// const API = {
-//     install,
-//     ...components
-// };
+const API = {
+    install,
+    ...components
+};
 
-export default install;
+export default API;
