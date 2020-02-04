@@ -26,5 +26,10 @@
         "vue-eslint-parser": "^7.0.0",
         "vuepress": "^1.2.0"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/2460392754/uni-pocky-ui.git"
+    },
+    "homepage": "https://github.com/2460392754/uni-pocky-ui#readme"
 }
