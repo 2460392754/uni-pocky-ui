@@ -1,6 +1,6 @@
 {
     "name": "@pocky/uni-ui",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "uniapp的ui框架",
     "main": "./src/index.js",
     "scripts": {
@@ -14,7 +14,6 @@
     "author": "pocky",
     "license": "ISC",
     "devDependencies": {
-        "@pocky/uni-core": "^1.0.0",
         "@types/uni-app": "^1.4.1",
         "babel-eslint": "^10.0.3",
         "eslint": "^6.8.0",
@@ -26,7 +25,9 @@
         "vue-eslint-parser": "^7.0.0",
         "vuepress": "^1.2.0"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@pocky/uni-core": "^1.0.0"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/2460392754/uni-pocky-ui.git"
