@@ -11,7 +11,7 @@ import PTextarea from './components/p-textarea.vue';
 import PCheckbox from './components/p-checkbox.vue';
 import PSwitch from './components/p-switch.vue';
 
-const components = {
+export const components = {
     PButton,
     PCard,
     PNav,
