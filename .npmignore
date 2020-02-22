@@ -6,6 +6,7 @@ dist-docs/
 unpackage/
 static/
 src/styles/common/ionicons/fonts
+.github/
 
 uni.scss
 pages.json
